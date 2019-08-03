@@ -1,0 +1,9 @@
+// Styling for the work experience list
+.experience .experience-item {
+  background: $secondary;
+  max-width: 20rem;
+  margin-bottom: 5rem;
+  border-radius: $border-radius;
+  overflow: hidden;
+  padding: 2rem;
+}

@@ -10756,6 +10756,15 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.experience .experience-item {
+  background: #204e75;
+  max-width: 20rem;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+
 .portfolio {
   margin-bottom: -30px;
 }
