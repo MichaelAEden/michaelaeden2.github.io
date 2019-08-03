@@ -10756,13 +10756,25 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.experience .experience-item {
+.experience .experience-item .experience-item-image {
   background: #204e75;
   max-width: 20rem;
   margin-bottom: 5rem;
   border-radius: 0.5rem;
   overflow: hidden;
   padding: 2rem;
+}
+
+.experience .experience-item .experience-item-caption .experience-item-caption-title {
+  color: #204e75;
+}
+
+.experience .experience-item .experience-item-caption .experience-item-caption-dates {
+  color: #dfdfdf;
+}
+
+.experience .experience-item .experience-item-caption .experience-item-caption-description {
+  font-size: 1.2rem;
 }
 
 .portfolio {
