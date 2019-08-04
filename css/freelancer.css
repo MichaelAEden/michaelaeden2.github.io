@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #6f9fe3;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -10756,10 +10756,14 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.experience .experience-item {
+  margin-bottom: 4rem;
+}
+
 .experience .experience-item .experience-item-image {
-  background: #204e75;
+  background: #cbe0ff;
   max-width: 20rem;
-  margin-bottom: 5rem;
+  min-height: 10rem;
   border-radius: 0.5rem;
   overflow: hidden;
   padding: 2rem;
