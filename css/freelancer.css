@@ -10766,11 +10766,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .experience .experience-item .experience-item-image {
   background: #cbe0ff;
-  max-width: 20rem;
-  min-height: 10rem;
+  max-width: 18rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .experience .experience-item .experience-item-caption .experience-item-caption-title {

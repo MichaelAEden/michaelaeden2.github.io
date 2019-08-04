@@ -4,11 +4,11 @@
 
   .experience-item-image {
     background: $light-blue;
-    max-width: 20rem;
-    min-height: 10rem;
+    max-width: 18rem;
     border-radius: $border-radius;
     overflow: hidden;
-    padding: 2rem;
+    // TODO: change dimensions of images to avoid this need for padding.
+    padding: 0 2rem;
   }
   .experience-item-caption {
     .experience-item-caption-title {
