@@ -10831,6 +10831,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.portfolio-modal .portfolio-modal-tools {
+  font-size: 1.3rem;
+}
+
 .portfolio-modal .close {
   position: absolute;
   z-index: 1;
