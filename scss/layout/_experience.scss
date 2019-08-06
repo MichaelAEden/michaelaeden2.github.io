@@ -1,12 +1,8 @@
 // Styling for the work experience list
 .experience .experience-item {
-  margin-bottom: 4rem;
-
   .experience-item-image {
     background: $light-blue;
-    max-width: 18rem;
     border-radius: $border-radius;
-    overflow: hidden;
     // TODO: change dimensions of images to avoid this need for padding.
     padding: 0 2rem;
   }

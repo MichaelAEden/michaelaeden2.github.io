@@ -10763,15 +10763,9 @@ a.text-dark:hover, a.text-dark:focus {
   width: 15rem;
 }
 
-.experience .experience-item {
-  margin-bottom: 4rem;
-}
-
 .experience .experience-item .experience-item-image {
   background: #cbe0ff;
-  max-width: 18rem;
   border-radius: 0.5rem;
-  overflow: hidden;
   padding: 0 2rem;
 }
 
