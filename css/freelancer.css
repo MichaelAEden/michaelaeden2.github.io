@@ -10578,47 +10578,31 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
+  margin: 1.25rem auto 2rem auto;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.divider-custom .divider-custom-line {
-  width: 100%;
-  max-width: 7rem;
+  max-width: 15rem;
   height: 0.25rem;
   background-color: #204e75;
   border-radius: 1rem;
   border-color: #204e75 !important;
 }
 
-.divider-custom .divider-custom-line:first-child {
-  margin-right: 1rem;
-}
-
-.divider-custom .divider-custom-line:last-child {
-  margin-left: 1rem;
-}
-
-.divider-custom .divider-custom-icon {
-  color: #204e75 !important;
-  font-size: 2rem;
-}
-
-.divider-custom.divider-light .divider-custom-line {
+.divider-custom.divider-light {
   background-color: #fff;
+  color: #fff;
 }
 
-.divider-custom.divider-light .divider-custom-icon {
-  color: #fff !important;
+.divider-custom.divider-long {
+  max-width: 25rem;
+}
+
+@media (min-width: 992px) {
+  .divider-custom {
+    max-width: 25rem;
+  }
+  .divider-custom.divider-long {
+    max-width: 35rem;
+  }
 }
 
 .btn-xl {
@@ -10735,7 +10719,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .masthead .masthead-avatar {
@@ -10752,7 +10736,7 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .masthead .masthead-avatar {
     width: 18rem;
