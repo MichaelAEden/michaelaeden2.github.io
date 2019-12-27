@@ -2,8 +2,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url('../img/masthead/bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  padding-top: calc(12.5rem + 74px);
-  padding-bottom: 12.5rem;
+  padding-top: calc(14rem + 50px);
+  padding-bottom: 14rem;
   .masthead-heading {
     font-size: 2.75rem;
     line-height: 2.75rem;
@@ -15,8 +15,8 @@
 
 @include media-breakpoint-up(lg) {
   .masthead {
-    padding-top: calc(12.5rem + 104px);
-    padding-bottom: 12.5rem;
+    padding-top: calc(14rem + 70px);
+    padding-bottom: 14rem;
     .masthead-heading {
       font-size: 4rem;
       line-height: 3.5rem;
