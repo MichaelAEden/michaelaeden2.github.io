@@ -1,14 +1,14 @@
 // Styling for the work experience list
 .experience .experience-item {
   .experience-item-image {
-    padding: 4rem 2rem;
+    margin: 0;
+    padding: 0;
+    max-width: 9rem;
   }
   .experience-item-caption {
     .experience-item-caption-title {
+      font-size: 1.2rem;
       color: $secondary;
-    }
-    .experience-item-caption-dates {
-      color: $tertiary;
     }
     .experience-item-caption-description {
       font-size: 1.2rem;
