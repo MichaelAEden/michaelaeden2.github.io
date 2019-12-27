@@ -5,6 +5,10 @@
     font-size: 2.25rem;
     line-height: 2rem;
   }
+  background-color: $bg-default;
+  &.bg-alt {
+    background-color: $bg-alt;
+  }
   @include media-breakpoint-up(lg) {
     .page-section-heading {
       font-size: 3rem;
