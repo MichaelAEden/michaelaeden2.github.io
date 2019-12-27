@@ -37,12 +37,12 @@
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
       color: $white;
-      background: $secondary;
+      background: $dark-grey;
       &:active,
       &:focus,
       &:hover {
         color: $white;
-        background: $secondary;
+        background: $dark-grey;
       }
     }
   }

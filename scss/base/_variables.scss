@@ -5,14 +5,13 @@ $white: #fff;
 $off-black: #1d1d1d;
 $dark-grey: #333;
 $light-grey: #eee;
-$blue-grey: #425f85;
+$violet: #716096;
 
 // Override Bootstrap colors
 $primary: $off-black !default;
-$secondary: $dark-grey !default;
+$secondary: $violet !default;
 
 // Other color definitions
-$tertiary: $blue-grey;
 $bg-default: $white;
 $bg-alt: $light-grey;
 
