@@ -10,10 +10,10 @@
 // Import components styles
 @import 'components/divider.scss';
 @import 'components/buttons.scss';
+@import 'components/navbar.scss';
 
 // Import layout styles
-@import 'layout/navbar.scss';
-@import 'layout/masthead.scss';
-@import 'layout/about.scss';
-@import 'layout/experience.scss';
-@import 'layout/portfolio.scss';
+@import 'homepage/masthead.scss';
+@import 'homepage/about.scss';
+@import 'homepage/experience.scss';
+@import 'homepage/portfolio.scss';
