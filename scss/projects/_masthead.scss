@@ -1,0 +1,35 @@
+.project-masthead {
+  background: linear-gradient(#bbb, #000);
+  padding-top: calc(5rem + 50px);
+  padding-bottom: 5rem;
+  .project-masthead-icon {
+    border-radius: 10px;
+  }
+  .project-masthead-heading {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+  .project-masthead-dates {
+    font-size: 1.75rem;
+  }
+  .project-masthead-summary {
+    font-size: 1.25rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .project-masthead {
+    padding-top: calc(5rem + 70px);
+    padding-bottom: 5rem;
+    .project-masthead-heading {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    .project-masthead-dates {
+      font-size: 2rem;
+    }
+    .project-masthead-summary {
+      font-size: 1.5rem;
+    }
+  }
+}
