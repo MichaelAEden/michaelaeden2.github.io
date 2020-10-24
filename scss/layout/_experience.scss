@@ -1,0 +1,19 @@
+// Styling for the work experience list
+.experience .experience-item {
+  .experience-item-image {
+    background: $light-blue;
+    border-radius: $border-radius;
+    padding: 4rem 2rem;
+  }
+  .experience-item-caption {
+    .experience-item-caption-title {
+      color: $secondary;
+    }
+    .experience-item-caption-dates {
+      color: $light-grey;
+    }
+    .experience-item-caption-description {
+      font-size: 1.2rem;
+    }
+  }
+}
