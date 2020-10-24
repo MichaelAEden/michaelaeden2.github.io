@@ -1,0 +1,17 @@
+.about {
+  .about-avatar {
+    max-width: 18rem;
+    border-radius: 3rem;
+  }
+  .about-description {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .about-description {
+      text-align: left;
+      font-size: 1.5rem;
+    }
+  }
+}
