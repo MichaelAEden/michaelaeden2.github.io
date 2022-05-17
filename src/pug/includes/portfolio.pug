@@ -1,0 +1,21 @@
+section#portfolio.page-section.portfolio.bg-primary
+
+    include mixin/project.pug
+
+    .container
+        // Portfolio Section Heading
+        h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+        // Icon Divider
+        .divider-custom
+            .divider-custom-line
+            .divider-custom-icon
+                i.fas.fa-star
+            .divider-custom-line
+        // Portfolio Grid Items
+        .row.justify-content-center
+            +project()
+            +project()
+            +project()
+            +project()
+            +project()
+            +project()
