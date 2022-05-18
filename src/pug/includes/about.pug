@@ -1,23 +1,14 @@
-section#about.page-section.bg-primary.text-white.mb-0
+section#about.page-section.about
     .container
-        // About Section Heading
-        h2.page-section-heading.text-center.text-uppercase.text-white About
-        // Icon Divider
-        .divider-custom.divider-light
-            .divider-custom-line
-            .divider-custom-icon
-                i.fas.fa-star
-            .divider-custom-line
-        // About Section Content
         .row
-            .col-lg-4.ms-auto
-                p.lead
-                    | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-            .col-lg-4.me-auto
-                p.lead
-                    | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-        // About Section Button
-        .text-center.mt-4
-            a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                i.fas.fa-download.me-2
-                | Free Download!
+            .col-lg-4.offset-lg-1.col-md-6.offset-md-3.mb-5
+                img.about-avatar.img-fluid(src='assets/img/avatar.png', alt='')
+            .col-lg-6.offset-lg-0.col-md-8.offset-md-2
+                p.about-description
+                    | Hi, I'm Michael.
+                    br
+                    | I'm a Systems Design Engineering undergrad student passionate about applying software to tackle real-world issues. I'm always looking for new ways to challenge myself.
+    .mt-5.text-center
+        a.btn.btn-xl.btn-secondary(href='/resources/Resume.pdf', target='_blank')
+            i.far.fa-file-alt.mr-2
+            | View Resume
