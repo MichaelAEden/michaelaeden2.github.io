@@ -1,16 +1,12 @@
-section#portfolio.page-section.portfolio.bg-primary
+section#portfolio.page-section.portfolio
 
     include mixin/project.pug
+    include mixin/divider.pug
 
     .container
         // Portfolio Section Heading
-        h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
-        // Icon Divider
-        .divider-custom
-            .divider-custom-line
-            .divider-custom-icon
-                i.fas.fa-star
-            .divider-custom-line
+        h2.page-section-heading.text-center.text-uppercase.mb-0 Portfolio
+        +divider()
         // Portfolio Grid Items
         .row.justify-content-center
             +project()
