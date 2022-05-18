@@ -5,7 +5,8 @@ mixin experience(options)
                 a(href=options.href, target='_blank')
                     img.img-fluid(src=options.image, alt='')
         .col-md-5.col-8.offset-0.mb-5
-            .experience-item-caption
-                h4.experience-item-caption-company !{options.company} !{options.emoji}
-                h5.experience-item-caption-title !{options.title} | !{options.dates}
-                p.experience-item-caption-description !{options.description}
+            h4
+                span.text-primary !{options.company} !{options.emoji}
+                span.text-secondary !{options.title}
+            h5.text-primary !{options.dates}
+            p.experience-item-description !{options.description}
