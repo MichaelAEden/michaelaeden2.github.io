@@ -1,9 +1,5 @@
-// 
-// Portfolio
-// 
-
-.portfolio {
-    .portfolio-item {
+.projects {
+    .project-item {
         cursor: pointer;
         position: relative;
         display: block;
@@ -11,7 +7,7 @@
         border-radius: $border-radius;
         overflow: hidden;
 
-        .portfolio-item-caption {
+        .project-item-caption {
             position: absolute;
             top: 0;
             left: 0;
@@ -23,22 +19,22 @@
                 opacity: 1;
             }
 
-            .portfolio-item-caption-content {
+            .project-item-caption-content {
                 font-size: 1.5rem;
             }
         }
     }
 }
 
-// Styling for the portfolio modals
-.portfolio-modal {
+// Styling for the project modals
+.project-modal {
     .btn-close {
         color: $primary;
         font-size: 2rem;
         padding: 1rem;
     }
 
-    .portfolio-modal-title {
+    .project-modal-title {
         font-size: 2.25rem;
         line-height: 2rem;
 
