@@ -1,10 +1,11 @@
 section#experience.page-section.experience
 
     include mixin/experience.pug
+    include mixin/divider.pug
 
     .container
         h2.page-section-heading.text-center.text-uppercase Experience
-        .divider-custom
+        +divider()
         .row.justify-content-center
             +experience({
                 href: 'https://uwaterloo.ca/neuroscience-mobility-balance-lab/',
