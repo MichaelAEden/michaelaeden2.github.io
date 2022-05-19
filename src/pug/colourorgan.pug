@@ -1,0 +1,14 @@
+extends layouts/project.pug
+
+block prepend head
+    - let title = 'Colour Organ';
+
+block prepend content
+    - 
+        let options = {
+            image: 'assets/img/projects/colourorgan.png',
+            name: 'Colour Organ',
+            dates: 'Fall 2019',
+            description: 'A circuit which converts an audio signal into a light show.<br>Uses a single transducer, second order filters, and amplifiers.',
+            demo: 'https://www.youtube.com/embed/_8Oro2L9WJQ',
+        };

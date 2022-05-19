@@ -1,10 +1,9 @@
-// 
-// Masthead
-// 
-
 .masthead {
-    padding-top: calc(6rem + 74px);
-    padding-bottom: 6rem;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url('../assets/img/masthead/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding-top: calc(14rem + 50px);
+    padding-bottom: 14rem;
 
     .masthead-heading {
         font-size: 2.75rem;
@@ -12,27 +11,22 @@
     }
 
     .masthead-subheading {
-        font-size: 1.25rem;
-    }
-
-    .masthead-avatar {
-        width: 15rem;
+        font-size: 1.5rem;
     }
 }
 
 @include media-breakpoint-up(lg) {
     .masthead {
-        padding-top: calc(6rem + 104px);
-        padding-bottom: 6rem;
-
+        padding-top: calc(14rem + 70px);
+        padding-bottom: 14rem;
         .masthead-heading {
             font-size: 4rem;
             line-height: 3.5rem;
         }
 
         .masthead-subheading {
-            font-size: 1.5rem;
+            font-size: 2.25rem;
+            line-height: 3.5rem;
         }
-
     }
 }

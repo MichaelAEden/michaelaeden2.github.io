@@ -15,6 +15,11 @@ html {
 // Styling for page sections
 .page-section {
     padding: 6rem 0;
+    background-color: $bg-default;
+
+    &.bg-alt {
+        background-color: $bg-alt;
+    }
 
     .page-section-heading {
         font-size: 2.25rem;

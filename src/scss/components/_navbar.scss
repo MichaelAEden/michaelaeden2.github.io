@@ -1,16 +1,8 @@
-// 
-// Navbar
-// 
-
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
-
-    .navbar-brand {
-        color: $white;
-    }
 
     .navbar-nav {
         margin-top: 1rem;
@@ -20,7 +12,7 @@
                 color: $white;
 
                 &:hover {
-                    color: $primary;
+                    color: $grey;
                 }
 
                 &:active,
@@ -29,7 +21,7 @@
                 }
 
                 &.active {
-                    color: $primary;
+                    color: $grey;
                 }
             }
         }
@@ -43,14 +35,7 @@
 
 @include media-breakpoint-up(lg) {
     #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
         transition: padding-top 0.3s, padding-bottom 0.3s;
-
-        .navbar-brand {
-            font-size: 1.75em;
-            transition: font-size 0.3s;
-        }
 
         .navbar-nav {
             margin-top: 0;
@@ -58,13 +43,13 @@
 
         .navbar-nav>li.nav-item>a.nav-link.active {
             color: $white;
-            background: $primary;
+            background: $dark-grey;
 
             &:active,
             &:focus,
             &:hover {
                 color: $white;
-                background: $primary;
+                background: $dark-grey;
             }
         }
     }
@@ -72,9 +57,5 @@
     #mainNav.navbar-shrink {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-
-        .navbar-brand {
-            font-size: 1.5em;
-        }
     }
 }

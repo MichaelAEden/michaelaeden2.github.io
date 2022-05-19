@@ -1,0 +1,5 @@
+mixin project(options)
+    .col-md-6.col-lg-4.mb-5
+        .project-item.mx-auto(data-bs-toggle='modal', data-bs-target=('#projectModal' + options.projectId))
+            .project-item-caption.d-flex.h-100.w-100
+            img.img-fluid(src=options.image, alt='')

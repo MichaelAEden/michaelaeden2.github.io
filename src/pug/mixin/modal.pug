@@ -1,0 +1,39 @@
+include divider.pug
+
+mixin modal(options)
+    .project-modal.modal.fade(tabindex='-1', id=('projectModal' + options.projectId), aria-labelledby=('projectModal' + options.projectId), aria-hidden='true')
+        .modal-dialog.modal-l
+            .modal-content
+                .modal-header.border-0
+                    button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+                .modal-body.text-center.pb-5
+                    h2.project-modal-title.text-primary.mb-0 #{options.name}
+
+                    +divider()
+
+                    .project-modal-description
+                        if options.languages
+                            strong Language#{options.languages.length == 1 ? '' : 's'}:
+                            .
+                                #{options.languages.join(', ')}
+                            br
+                        if options.tools
+                            strong Tools:
+                            .
+                                #{options.tools.join(', ')}
+                            br
+                        if options.concepts
+                            strong Concepts:
+                            .
+                                #{options.concepts.join(', ')}
+                            br
+
+                    a.btn.btn-primary.mt-4(href=options.link)
+                        if options.link.includes('github')
+                            i.fab.fa-fw.fa-github
+                            .
+                                GitHub
+                        else
+                            i.far.fa-file-alt
+                            .
+                                More Info

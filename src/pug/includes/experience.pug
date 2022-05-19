@@ -1,0 +1,53 @@
+include ../mixin/experience.pug
+include ../mixin/divider.pug
+
+section#experience.page-section.experience.bg-alt.pb-5
+    .container
+        h2.page-section-heading.text-center.text-uppercase Experience
+        +divider()
+        .row.justify-content-center
+            +experience({
+                href: 'https://uwaterloo.ca/neuroscience-mobility-balance-lab/',
+                image: 'assets/img/experience/nimbal.png',
+                company: 'NiMBaL',
+                emoji: '&#x1f9e0;',
+                title: 'Algorithm Developer',
+                dates: 'Summer&nbsp;2021',
+                description: 'At the Neuroscience, Mobility, and Balance Lab (NiMBaL), I developed a novel algorithm in Python to detect clock drift between accelerometers worn across the body. I additionally implemented adaptive wavelet Wiener filtering in Python to assess the quality of ECG signals continuously.',
+            })
+            +experience({
+                href: 'https://www.tunnelbear.com/',
+                image: 'assets/img/experience/tunnelbear.png',
+                company: 'TunnelBear',
+                emoji: '&#x1f43b;',
+                title: 'Backend Developer',
+                dates: 'Winter&nbsp;2020',
+                description: 'At TunnelBear, my work focused on the backend Scala service PolarBear, the backbone of our VPN connections. I containerized PolarBear with Docker and implemented CI/CD with GitHub Actions, and I also eliminated two major performance bottlenecks in the service.',
+            })
+            +experience({
+                href: 'https://hootsuite.com/',
+                image: 'assets/img/experience/hootsuite.png',
+                company: 'Hootsuite',
+                emoji: '&#x1f989;',
+                title: 'Software Developer',
+                dates: 'May&nbsp;2018-19',
+                description: 'During my time at Hootsuite, I maintained an uptime of 99.95% for two core backend Scala services. I also developed an interface for a data lake containing 17 million documents using Go, React, Redux, and Elasticsearch.',
+            })
+            +experience({
+                href: 'https://www.sidefx.com/',
+                image: 'assets/img/experience/sidefx.png',
+                company: 'SideFX',
+                emoji: '&#x1F3AC;',
+                title: 'Software Developer',
+                dates: 'Fall&nbsp;2017',
+                description: 'At SideFX, I developed improvements to the Pose Library Python Panel&mdash;a tool for storing and capturing poses on 3D characters. I overhauled the UI and added operations for organizing, editing, previewing, importing, and exporting poses.',
+            })
+            +experience({
+                href: 'https://www.iotum.com/',
+                image: 'assets/img/experience/iotum.png',
+                company: 'Iotum Inc.',
+                emoji: '&#x1F4AC;',
+                title: 'QA Automation',
+                dates: 'Winter&nbsp;2017',
+                description: 'At Iotum, I automated 73 unique test cases using Python and Selenium, and implemented the Python unittest framework. My contributions significantly reduced the time required to test each deployment.',
+            })
