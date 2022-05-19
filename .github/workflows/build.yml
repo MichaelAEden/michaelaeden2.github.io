@@ -35,7 +35,7 @@ jobs:
 
       - name: Copy build files to AWS S3
         run: |
-          aws s3 rm --recursive s3://${{ env.AWS_S3_BUCKET }}
+          aws s3 rm --recursive --exclude "resources/*" s3://${{ env.AWS_S3_BUCKET }}
           aws s3 sync ./dist s3://${{ env.AWS_S3_BUCKET }}
 
       - name: Invalidate AWS CloudFront cache
