@@ -1,0 +1,48 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  AWS_S3_BUCKET: michaeleden.ca
+  AWS_CF_DISTRIBUTION: E6T05C2Y4V91
+  NODE_VERSION: '14.x'
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Build project
+        run: |
+          npm ci
+          npm run build
+
+      - name: Copy build files to AWS S3
+        run: |
+          aws s3 rm --recursive s3://${{ env.AWS_S3_BUCKET }}
+          aws s3 sync ./dist s3://${{ env.AWS_S3_BUCKET }}
+
+      - name: Invalidate AWS CloudFront cache
+        run: >
+          aws cloudfront create-invalidation
+          --distribution-id ${{ env.AWS_CF_DISTRIBUTION }}
+          --paths "/*"
