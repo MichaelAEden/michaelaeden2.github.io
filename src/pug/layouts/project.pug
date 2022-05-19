@@ -1,0 +1,44 @@
+extends layout.pug
+
+block content
+
+    include ../mixin/divider.pug
+
+    // Navigation
+    nav#mainNav.navbar.navbar-expand-lg.bg-primary.text-uppercase.fixed-top
+        a.text-white.nav-link(href='/') Home
+
+    // Project Masthead
+    header.project-masthead.text-white
+        .container.d-flex.align-items-start.flex-row
+            // Project Icon
+            .container.d-flex.align-items-center.flex-column.justify-content-center
+                img.img-fluid.project-masthead-icon(src=options.image, alt='')
+
+            // Project Summary
+            // TODO: does not display well on mobile screens
+            .container.d-flex.align-items-start.justify-content-end.flex-column
+                h1.project-masthead-heading.text-uppercase #{options.name}
+                h2.project-masthead-dates.text-uppercase #{options.dates}
+
+                +divider(true, true)
+
+                p.project-masthead-summary
+                    | !{options.description}
+
+                if options.link
+                    .project-masthead-button
+                        a(href=options.link, target='_blank')
+                            button.btn.btn-primary
+                                i.fab.fa-fw.fa-github
+                                .
+                                    View on GitHub
+
+    // Demo Section
+    section#demo.page-section.demo
+        .container
+            h2.page-section-heading.text-center.text-uppercase Demo
+            +divider()
+            .row
+                .col-lg-8.offset-lg-2.col-md-10.offset-md-1
+                    iframe(width='560', height='315', src=options.demo, frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')

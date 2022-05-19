@@ -7,7 +7,7 @@
 
     .divider-custom-line {
         width: 100%;
-        max-width: 25rem;
+        max-width: 15rem;
         height: 0.25rem;
         background-color: $primary;
         border-radius: 1rem;
@@ -17,6 +17,25 @@
     &.divider-light {
         .divider-custom-line {
             background-color: $white;
+        }
+    }
+
+    &.divider-long {
+        .divider-custom-line {
+            max-width: 25rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .divider-custom {
+        .divider-custom-line {
+            max-width: 25rem;
+        }
+        &.divider-long {
+            .divider-custom-line {
+                max-width: 35rem;
+            }
         }
     }
 }
