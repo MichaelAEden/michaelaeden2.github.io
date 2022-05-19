@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   AWS_S3_BUCKET: michaeleden.ca
