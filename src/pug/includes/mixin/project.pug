@@ -1,7 +1,5 @@
-mixin project
+mixin project(options)
     .col-md-6.col-lg-4.mb-5
-        .project-item.mx-auto(data-bs-toggle='modal', data-bs-target='#projectModal1')
-            .project-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                .project-item-caption-content.text-center.text-white
-                    i.fas.fa-plus.fa-3x
-            img.img-fluid(src='assets/img/projects/inquestsca.png', alt='...')
+        .project-item.mx-auto(data-bs-toggle='modal', data-bs-target=('#projectModal' + options.projectId))
+            .project-item-caption.d-flex.h-100.w-100
+            img.img-fluid(src=options.image, alt='')

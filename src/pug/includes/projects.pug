@@ -1,15 +1,57 @@
+include mixin/project.pug
+include mixin/divider.pug
+include mixin/modal.pug
+
+-
+    let projectsData = [
+        {
+            projectId: 'inquestsca',
+            name: 'inquests.ca',
+            image: 'assets/img/projects/inquestsca.png',
+            languages: ['TypeScript', 'JavaScript'],
+            tools: ['React', 'Express', 'AWS', 'MySQL'],
+            link: 'https://github.com/inquests-ca',
+        },
+        {
+            projectId: 'pyfractals',
+            name: 'PyFractals',
+            image: 'assets/img/projects/pyfractals.png',
+            languages: ['Python'],
+            tools: ['NumPy', 'Qt'],
+            link: 'https://github.com/MichaelAEden/PyFractals',
+        },
+        {
+            projectId: 'gameoflife',
+            name: 'Game of Life',
+            image: 'assets/img/projects/gameoflife.png',
+            languages: ['Java'],
+            tools: ['Java Graphics 2D'],
+            link: 'https://github.com/MichaelAEden/GameOfLife',
+        },
+        {
+            projectId: 'securesafe',
+            name: 'Secure Safe',
+            image: 'assets/img/projects/securesafe.png',
+            languages: ['C++'],
+            tools: ['Arduino'],
+            link: 'securesafe.html',
+        },
+        {
+            projectId: 'colourorgan',
+            name: 'Colour Organ',
+            image: 'assets/img/projects/colourorgan.png',
+            concepts: ['transduction', 'amplification', '2nd order filtering'],
+            link: 'colourorgan.html',
+        },
+    ];
+
 section#projects.page-section.projects
-
-    include mixin/project.pug
-    include mixin/divider.pug
-
     .container
         h2.page-section-heading.text-center.text-uppercase.mb-0 Projects
         +divider()
         .row.justify-content-center
-            +project()
-            +project()
-            +project()
-            +project()
-            +project()
-            +project()
+            each projectData in projectsData
+                +project(projectData)
+
+each projectData in projectsData
+    +modal(projectData)

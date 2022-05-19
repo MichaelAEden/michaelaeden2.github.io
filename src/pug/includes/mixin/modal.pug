@@ -1,26 +1,39 @@
-mixin modal
-    #projectModal1.project-modal.modal.fade(tabindex='-1', aria-labelledby='projectModal1', aria-hidden='true')
-        .modal-dialog.modal-xl
+include divider.pug
+
+mixin modal(options)
+    .project-modal.modal.fade(tabindex='-1', id=('projectModal' + options.projectId), aria-labelledby=('projectModal' + options.projectId), aria-hidden='true')
+        .modal-dialog.modal-l
             .modal-content
                 .modal-header.border-0
                     button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
                 .modal-body.text-center.pb-5
-                    .container
-                        .row.justify-content-center
-                            .col-lg-8
-                                // Portfolio Modal - Title
-                                h2.project-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
-                                // Icon Divider
-                                .divider-custom
-                                    .divider-custom-line
-                                    .divider-custom-icon
-                                        i.fas.fa-star
-                                    .divider-custom-line
-                                // Portfolio Modal - Image
-                                img.img-fluid.rounded.mb-5(src='assets/img/projects/inquestsca.png', alt='...')
-                                // Portfolio Modal - Text
-                                p.mb-4
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                                button.btn.btn-primary(data-bs-dismiss='modal')
-                                    i.fas.fa-xmark.fa-fw
-                                    | Close Window
+                    h2.project-modal-title.text-primary.mb-0 #{options.name}
+
+                    +divider()
+
+                    .project-modal-description
+                        if options.languages
+                            strong Language#{options.languages.length == 1 ? '' : 's'}:
+                            .
+                                #{options.languages.join(', ')}
+                            br
+                        if options.tools
+                            strong Tool#{options.tools.length == 1 ? '' : 's'}:
+                            .
+                                #{options.tools.join(', ')}
+                            br
+                        if options.concepts
+                            strong Concept#{options.concepts.length == 1 ? '' : 's'}:
+                            .
+                                #{options.concepts.join(', ')}
+                            br
+
+                    a.btn.btn-primary.mt-4(href=options.link)
+                        if options.link.includes('github')
+                            i.fab.fa-fw.fa-github
+                            .
+                                GitHub
+                        else
+                            i.far.fa-file-alt
+                            .
+                                More Info
