@@ -1,6 +1,6 @@
 # [michaeleden.ca](https://michaeleden.ca)
 
-My personal website, based on the [Freelancer](https://startbootstrap.com/theme/freelancer/) Bootstrap theme.
+My personal website, built on the [Freelancer](https://startbootstrap.com/theme/freelancer/) Bootstrap theme.
 
 ### npm Scripts
 
